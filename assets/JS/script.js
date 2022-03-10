@@ -1,46 +1,62 @@
-const images = [
-    ["url('assets/img/outfits/sleep_outfit.png')", "url('assets/img/portraits/sleep_01_portrait.png')"],
-    ["url('assets/img/outfits/sleep_outfit.png')", "url('assets/img/portraits/sleep_02_portrait.png')"],
-    ["url('assets/img/outfits/sleep_outfit.png')", "url('assets/img/portraits/sleep_03_portrait.png')"],
-    ["url('assets/img/outfits/sleep_outfit.png')", "url('assets/img/portraits/sleep_04_portrait.png')"],
-    ["url('assets/img/outfits/everyday_outfit.png')", "url('assets/img/portraits/everyday_portrait.png')"],
-    ["url('assets/img/outfits/formal_outfit.png')", "url('assets/img/portraits/formal_portrait.png')"],
-    ["url('assets/img/outfits/party_outfit.png')", "url('assets/img/portraits/party_portrait.png')"],
-    ["url('assets/img/outfits/swim_outfit.png')", "url('assets/img/portraits/swim_portrait.png')"],
-    ["url('assets/img/outfits/athletic_outfit.png')", "url('assets/img/portraits/athletic_portrait.png')"]
+const sleep01 = "Noooosa, que sono!";
+const sleep02 = "Ah, oi! Não tinha te visto aí!";
+const sleep03 = "Nossa, olha minha cara, meu cabelo, minha roupa...";
+const sleep04 = "Será que você pode me ajudar a escolher uma roupa?";
+const everyday = "Everyday text";
+const formal = "Formal text";
+const party = "Party text";
+const swim = "Swim text";
+const athletic = "Athletic text";
+
+const imgList = [
+    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_01_portrait.png", sleep01],
+    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_02_portrait.png", sleep02],
+    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_03_portrait.png", sleep03],
+    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_04_portrait.png", sleep04],
+    ["url('assets/img/outfits/everyday_outfit.png')", "assets/img/portraits/everyday_portrait.png", everyday],
+    ["url('assets/img/outfits/formal_outfit.png')", "assets/img/portraits/formal_portrait.png", formal],
+    ["url('assets/img/outfits/party_outfit.png')", "assets/img/portraits/party_portrait.png", party],
+    ["url('assets/img/outfits/swim_outfit.png')", "assets/img/portraits/swim_portrait.png", swim],
+    ["url('assets/img/outfits/athletic_outfit.png')", "assets/img/portraits/athletic_portrait.png", athletic]
 ]
 
-const btn = document.querySelector('#changeBtn');
+let changeBtn = document.getElementById('changeBtn');
 
-btn.addEventListener('click', () => {
+changeBtn.addEventListener('click', () => {
 
-    document.body.style.backgroundImage = "url('assets/img/outfits/athletic_outfit.png')";
+    let contentText = document.getElementById('contentText');
+    let changeBtnText = document.getElementById('changeBtnText');
+    let changeBtnIcon = document.getElementById('changeBtnIcon');
+    let portrait = document.getElementById('portrait');
+    let changeBtnValue = parseInt(changeBtn.value);
+
+    if (changeBtnValue > imgList.length - 1) {
+        changeBtnValue = 0;
+    }
+
+    document.body.style.backgroundImage = imgList[changeBtnValue][0];
+    portrait.src = imgList[changeBtnValue][1];
+    contentText.innerText = imgList[changeBtnValue][2];
+
+    if (changeBtnValue == 0) {
+        changeBtnText.innerText = "\"Bom dia!\"";
+    } else if (changeBtnValue == 3) {
+        changeBtnText.innerText = "\"Bora!\"";
+    } else if (changeBtnValue == imgList.length - 1) {
+        changeBtnText.innerText = "RECOMEÇAR!";
+    } else {
+        changeBtnText.innerText = "próximo";
+    }
+
+    if (changeBtnText.innerText == "próximo") {
+        changeBtnIcon.src = "assets/img/btnIcons/next.png";
+    } else if (changeBtnText.innerText == "RECOMEÇAR!") {
+        changeBtnIcon.src = "assets/img/btnIcons/restart.png";
+    } else {
+        changeBtnIcon.src = "assets/img/btnIcons/talk.png";
+    }
+
+    changeBtnValue++;
+    changeBtn.value = `${changeBtnValue}`
+
 });
-
-
-
-// const elementoNome = document.getElementById('nome'); /* Cria a variável elementoNome e coloca o elemento com o id nome nela */
-// const elementoSituacao = document.querySelector('#situacao'); /* Cria a variável elementoSituacao e coloca o elemento com o id situacao nela */
-// const elementoImg = document.querySelector('#imagem') /* Cria a variável elementoImg e coloca o elemento com o id imagem nela */
-// let elementoBtn = document.querySelector('#alterar') /* Cria a variável elementoBtn e coloca o elemento com o id alterar nela */
-
-// /* Adiciona o evento de click no elementoBtn e executa a função anonima (arrow function) */
-// elementoBtn.addEventListener('click', () =>{
-//     /* Verifica se o valour do botão é 'primeiro', se for troque de humor para o Hulk */
-//     if(elementoBtn.value == 'primeiro'){
-//         elementoImg.src = './assets/img/Hulk.png' /* Troca a imagem do personagem */
-//         elementoNome.innerText = 'Hulk' /* Altera o texto do elemento nome */
-//         elementoSituacao.innerText = 'Pistola' /* Altera o texto do elemento situação */
-//         elementoBtn.value = 'segundo' /* Altera valor do botão */
-//     } else if(elementoBtn.value == 'segundo') { /* Verifica se o valour do botão é 'segundo', se for troque de humor para o Dr. Hulk */
-//         elementoImg.src = './assets/img/Dr. Hulk.png'  /* Troca a imagem do personagem */
-//         elementoNome.innerText = 'Dr. Hulk' /* Altera o texto do elemento nome */
-//         elementoSituacao.innerText = 'Pistola geek' /* Altera o texto do elemento situação */
-//         elementoBtn.value = 'terceiro'  /* Altera valor do botão */
-//     } else { /* Se os valores do botão não forem, 'primeiro' nem 'segundo' mude para o Dr. Banner */
-//         elementoImg.src = './assets/img/Dr. Banner.png' /* Troca a imagem do personagem */
-//         elementoNome.innerText = 'Dr. Banner' /* Altera o texto do elemento nome */
-//         elementoSituacao.innerText = 'Simples humano' /* Altera o texto do elemento situação */
-//         elementoBtn.value = 'primeiro' /* Altera valor do botão */
-//     }
-// })
