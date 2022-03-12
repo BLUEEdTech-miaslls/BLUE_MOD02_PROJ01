@@ -1,4 +1,7 @@
 @media screen and (min-width: 800px) {
+    html {
+        font-size: 1em;
+    }
     body {
         flex-direction: row;
         background-image: url('../img/blank_BG.png');
