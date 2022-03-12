@@ -43,6 +43,10 @@
         box-shadow: 0.25rem 0.25rem 2rem 2rem rgba(0, 0, 0, 0.1);
         border-radius: 1rem;
         font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+    div#contentText {
+        min-height: 3.2rem;
     }
     button.glassBtn {
         padding: 1rem 1.5rem;
