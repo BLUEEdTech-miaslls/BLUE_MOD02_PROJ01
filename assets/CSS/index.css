@@ -47,6 +47,10 @@
     button.glassBtn {
         padding: 1rem 1.5rem;
     }
+    button.glassBtn:hover {
+        background: rgba(117, 171, 74, 0.9);
+        cursor: pointer;
+    }
     div#changeBtnText {
         font-size: 2rem;
     }
