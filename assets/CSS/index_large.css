@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     body {
         flex-direction: row;
         background-image: url('../img/blank_BG.png');
@@ -13,7 +13,7 @@
     /* 📌 title */
     section#titleContainer {
         width: 100%;
-        height: 10%;
+        min-height: 3.4rem;
         margin-bottom: 10%;
         padding-left: 10%;
         column-gap: 2rem;
@@ -23,12 +23,12 @@
         align-self: baseline;
     }
     h1#title {
-        font-size: 200%;
+        font-size: 1.2rem;
     }
     /* 📌 icon bar */
     section#iconBar {
         width: 80%;
-        height: 4%;
+        height: 3.5%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -42,11 +42,11 @@
         background-color: rgba(196, 196, 196, 0.3);
         box-shadow: 0.25rem 0.25rem 2rem 2rem rgba(0, 0, 0, 0.1);
         border-radius: 1rem;
-        font-size: 1.5rem;
-        line-height: 1.6rem;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
     }
     div#contentText {
-        min-height: 3.2rem;
+        min-height: 2.6rem;
     }
     button.glassBtn {
         padding: 1rem 1.5rem;
@@ -56,10 +56,10 @@
         cursor: pointer;
     }
     div#changeBtnText {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
     }
     img#changeBtnIcon {
-        width: 1.5rem;
+        display: none;
     }
     /* 📌📌 ----- OUTFIT ----- */
     section#outfitContainer {
@@ -76,3 +76,24 @@
         align-items: flex-end;
     }
 }
+
+
+/* @media screen and (min-width: 800px) {
+    h1#title {
+        font-size: 1.5rem;
+    }
+    section#content {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+    div#contentText {
+        min-height: 3.2rem;
+    }
+    div#changeBtnText {
+        font-size: 1.5rem;
+    }
+    img#changeBtnIcon {
+        width: 1.5rem;
+        display: block;
+    }
+} */
