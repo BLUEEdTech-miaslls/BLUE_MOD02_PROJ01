@@ -1,5 +1,13 @@
+const animation = document.querySelector("[data-animation]");
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    animation.classList.add("slideIn");
+
+});
+
 const sleep01 = "Noooosa, que sono!";
-const sleep02 = "Ah, oi! Não tinha te visto aí!";
+const sleep02 = "Ah, DagDag! Não tinha te visto aí!"; // TODO: Add SIMLISH TEXT
 const sleep03 = "Nossa, olha minha cara, meu cabelo, minha roupa...";
 const sleep04 = "Será que você pode me ajudar a escolher o que vestir?";
 const everyday = "Que tal esse look básico? Perfeito pro dia-a-dia!";
@@ -40,7 +48,7 @@ changeBtn.addEventListener('click', () => {
     contentText.innerText = assetList[changeBtnValue][2];
 
     if (changeBtnValue == 0) {
-        changeBtnText.innerText = "\"Bom dia!\"";
+        changeBtnText.innerText = "\"SulSul!\"";
     } else if (changeBtnValue == 3) {
         changeBtnText.innerText = "\"Bora!\"";
     } else if (changeBtnValue == assetList.length - 1) {

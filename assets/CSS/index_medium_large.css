@@ -51,10 +51,6 @@
     button.glassBtn {
         padding: 1rem 1.5rem;
     }
-    button.glassBtn:hover {
-        background: rgba(200, 200, 200, 0.315);
-        cursor: pointer;
-    }
     div#changeBtnText {
         font-size: 0.8rem;
     }
@@ -76,24 +72,3 @@
         align-items: flex-end;
     }
 }
-
-
-/* @media screen and (min-width: 800px) {
-    h1#title {
-        font-size: 1.5rem;
-    }
-    section#content {
-        font-size: 1.5rem;
-        line-height: 1.6rem;
-    }
-    div#contentText {
-        min-height: 3.2rem;
-    }
-    div#changeBtnText {
-        font-size: 1.5rem;
-    }
-    img#changeBtnIcon {
-        width: 1.5rem;
-        display: block;
-    }
-} */
