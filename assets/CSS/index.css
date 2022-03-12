@@ -42,7 +42,7 @@
         background-color: rgba(196, 196, 196, 0.3);
         box-shadow: 0.25rem 0.25rem 2rem 2rem rgba(0, 0, 0, 0.1);
         border-radius: 1rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     button.glassBtn {
         padding: 1rem 1.5rem;
@@ -52,7 +52,7 @@
         cursor: pointer;
     }
     div#changeBtnText {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     img#changeBtnIcon {
         width: 1.5rem;
