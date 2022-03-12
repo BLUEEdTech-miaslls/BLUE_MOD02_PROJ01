@@ -1,10 +1,16 @@
-const animation = document.querySelector("[data-animation]");
+// 📌 slide-in animation on portrait
+
+doAnimation = () => {
+
+    let portrait = document.getElementById("portrait");
+    portrait.setAttribute("class", "animate");
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    animation.classList.add("slideIn");
-
+    doAnimation();
 });
+
+// 📌 define assets
 
 const sleep01 = "Noooosa, que sono!";
 const sleep02 = "Ah, DagDag! Não tinha te visto aí!"; // TODO: Add SIMLISH TEXT
@@ -35,13 +41,17 @@ changeBtn.addEventListener('click', () => {
     let contentText = document.getElementById('contentText');
     let changeBtnText = document.getElementById('changeBtnText');
     let changeBtnIcon = document.getElementById('changeBtnIcon');
+    let changeBtnValue = parseInt(changeBtn.value);
     let outfit = document.getElementById('outfit')
     let portrait = document.getElementById('portrait');
-    let changeBtnValue = parseInt(changeBtn.value);
+
+    portrait.removeAttribute('class');
 
     if (changeBtnValue > assetList.length - 1) {
         changeBtnValue = 0;
     }
+
+    // 📌 update images, text and button
 
     outfit.src = assetList[changeBtnValue][0];
     portrait.src = assetList[changeBtnValue][1];
@@ -63,6 +73,12 @@ changeBtn.addEventListener('click', () => {
         changeBtnIcon.src = "assets/img/btnIcons/restart.png";
     } else {
         changeBtnIcon.src = "assets/img/btnIcons/talk.png";
+    }
+
+    // 📌 animate portrait (according to frame)
+
+    if (changeBtnValue > 3 || changeBtnValue == 0) {
+        doAnimation();
     }
 
     changeBtnValue++;
