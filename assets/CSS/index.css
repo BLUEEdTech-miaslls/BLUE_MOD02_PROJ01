@@ -51,12 +51,6 @@
         background: rgba(117, 171, 74, 0.9);
         cursor: pointer;
     }
-    div#changeBtnText {
-        font-size: 1.3rem;
-    }
-    img#changeBtnIcon {
-        width: 1.5rem;
-    }
     /* 📌📌 ----- OUTFIT ----- */
     section#outfitContainer {
         width: 30%;
