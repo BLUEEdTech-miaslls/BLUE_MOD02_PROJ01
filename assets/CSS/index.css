@@ -1,0 +1,70 @@
+@media screen and (min-width: 800px) {
+    body {
+        flex-direction: row;
+        background-image: url('../img/blank_BG.png');
+    }
+    /* 📌📌 ----- MAIN CONTENT ----- */
+    main#mainContainer {
+        width: 30%;
+        height: 100%;
+        justify-content: flex-start;
+        row-gap: 7.5%;
+    }
+    /* 📌 title */
+    section#titleContainer {
+        width: 100%;
+        height: 10%;
+        margin-bottom: 10%;
+        padding-left: 10%;
+        column-gap: 2rem;
+    }
+    div#plumbobIconContainer {
+        width: 22%;
+        align-self: baseline;
+    }
+    h1#title {
+        font-size: 2rem;
+    }
+    /* 📌 icon bar */
+    section#iconBar {
+        width: 80%;
+        height: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    img.iconBar_icon {
+        height: 100%;
+    }
+    /* 📌 content */
+    section#content {
+        padding: 5%;
+        background-color: rgba(196, 196, 196, 0.3);
+        box-shadow: 0.25rem 0.25rem 2rem 2rem rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        font-size: 1.8rem;
+    }
+    button.glassBtn {
+        padding: 1rem 1.5rem;
+    }
+    div#changeBtnText {
+        font-size: 2rem;
+    }
+    img#changeBtnIcon {
+        width: 2rem;
+    }
+    /* 📌📌 ----- OUTFIT ----- */
+    section#outfitContainer {
+        width: 30%;
+        height: 100%;
+    }
+    img#outfit {
+        max-height: 80%;
+    }
+    /* 📌📌 PORTRAIT */
+    section#portraitContainer {
+        width: 40%;
+        height: 100%;
+        align-items: flex-end;
+    }
+}

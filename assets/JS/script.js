@@ -8,16 +8,16 @@ const party = "Party text";
 const swim = "Swim text";
 const athletic = "Athletic text";
 
-const imgList = [
-    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_01_portrait.png", sleep01],
-    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_02_portrait.png", sleep02],
-    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_03_portrait.png", sleep03],
-    ["url('assets/img/outfits/sleep_outfit.png')", "assets/img/portraits/sleep_04_portrait.png", sleep04],
-    ["url('assets/img/outfits/everyday_outfit.png')", "assets/img/portraits/everyday_portrait.png", everyday],
-    ["url('assets/img/outfits/formal_outfit.png')", "assets/img/portraits/formal_portrait.png", formal],
-    ["url('assets/img/outfits/party_outfit.png')", "assets/img/portraits/party_portrait.png", party],
-    ["url('assets/img/outfits/swim_outfit.png')", "assets/img/portraits/swim_portrait.png", swim],
-    ["url('assets/img/outfits/athletic_outfit.png')", "assets/img/portraits/athletic_portrait.png", athletic]
+const assetList = [
+    ["assets/img/outfits/sleep_outfit.png", "assets/img/portraits/sleep_01_portrait.png", sleep01],
+    ["assets/img/outfits/sleep_outfit.png", "assets/img/portraits/sleep_02_portrait.png", sleep02],
+    ["assets/img/outfits/sleep_outfit.png", "assets/img/portraits/sleep_03_portrait.png", sleep03],
+    ["assets/img/outfits/sleep_outfit.png", "assets/img/portraits/sleep_04_portrait.png", sleep04],
+    ["assets/img/outfits/everyday_outfit.png", "assets/img/portraits/everyday_portrait.png", everyday],
+    ["assets/img/outfits/formal_outfit.png", "assets/img/portraits/formal_portrait.png", formal],
+    ["assets/img/outfits/party_outfit.png", "assets/img/portraits/party_portrait.png", party],
+    ["assets/img/outfits/swim_outfit.png", "assets/img/portraits/swim_portrait.png", swim],
+    ["assets/img/outfits/athletic_outfit.png", "assets/img/portraits/athletic_portrait.png", athletic]
 ]
 
 let changeBtn = document.getElementById('changeBtn');
@@ -27,22 +27,23 @@ changeBtn.addEventListener('click', () => {
     let contentText = document.getElementById('contentText');
     let changeBtnText = document.getElementById('changeBtnText');
     let changeBtnIcon = document.getElementById('changeBtnIcon');
+    let outfit = document.getElementById('outfit')
     let portrait = document.getElementById('portrait');
     let changeBtnValue = parseInt(changeBtn.value);
 
-    if (changeBtnValue > imgList.length - 1) {
+    if (changeBtnValue > assetList.length - 1) {
         changeBtnValue = 0;
     }
 
-    document.body.style.backgroundImage = imgList[changeBtnValue][0];
-    portrait.src = imgList[changeBtnValue][1];
-    contentText.innerText = imgList[changeBtnValue][2];
+    outfit.src = assetList[changeBtnValue][0];
+    portrait.src = assetList[changeBtnValue][1];
+    contentText.innerText = assetList[changeBtnValue][2];
 
     if (changeBtnValue == 0) {
         changeBtnText.innerText = "\"Bom dia!\"";
     } else if (changeBtnValue == 3) {
         changeBtnText.innerText = "\"Bora!\"";
-    } else if (changeBtnValue == imgList.length - 1) {
+    } else if (changeBtnValue == assetList.length - 1) {
         changeBtnText.innerText = "RECOMEÇAR!";
     } else {
         changeBtnText.innerText = "próximo";

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" href="./assets/img/blank_BG.png">
+    <link rel="preload" as="image" href="./assets/img/blank_BG_small.png">
     <link rel="preload" as="image" href="./assets/img/outfits/athletic_outfit.png">
     <link rel="preload" as="image" href="./assets/img/outfits/everyday_outfit.png">
     <link rel="preload" as="image" href="./assets/img/outfits/formal_outfit.png">
@@ -20,42 +22,40 @@
     <link rel="preload" as="image" href="./assets/img/portraits/formal_portrait.png">
     <link rel="preload" as="image" href="./assets/img/portraits/party_portrait.png">
     <link rel="preload" as="image" href="./assets/img/portraits/swim_portrait.png">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/index_small.css">
+    <link rel="stylesheet" href="./assets/CSS/index.css">
     <link rel="icon" href="./assets/img/favicon.ico">
     <title>Jogo do Humor: DRESS ME UP!</title>
 </head>
 
 <body>
-    <div id="bg"></div>
-
-    <main>
+    <main id="mainContainer">
 
         <section id="titleContainer">
-            <figure id="plumbobIconContainer"><img id="plumbobIcon" src="./assets/img/plumbob.png" alt="plumbob icon"></figure>
+            <div id="plumbobIconContainer"><img id="plumbobIcon" src="./assets/img/plumbob.png" alt="plumbob icon"></div>
             <h1 id="title">DRESS ME UP!</h2>
         </section>
 
         <section id="iconBar">
 
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (10).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (129).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (154).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (16).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (162).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (28).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (217).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (3).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (439).png" alt="icon">
-            <img src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (96).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (10).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (16).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (154).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (162).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (28).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (217).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (3).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (439).png" alt="icon">
+            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (96).png" alt="icon">
 
         </section>
 
         <section id="content">
             <div id="contentText">
-                Noooosa, que sono!
+                "Noooosa, que sono!"
             </div>
 
-            <button class="glass" id="changeBtn" value="1" onclick="changeBG()">
+            <button class="glassBtn" id="changeBtn" value="1">
             <div class="btnContent">
                 <div id="changeBtnText">Bom dia!</div>
                 <img id="changeBtnIcon" src="./assets/img/btnIcons/talk.png" alt="button icon">
@@ -66,14 +66,17 @@
 
     </main>
 
-    <aside id="portraitContainer">
+    <section id="outfitContainer">
+        <img id="outfit" src="./assets/img/outfits/sleep_outfit.png" alt="outfit">
+    </section>
 
-        <img id="portrait" src="./assets/img/portraits/sleep_01_portrait.png" alt="">
+    <section id="portraitContainer">
 
-    </aside>
+        <img id="portrait" src="./assets/img/portraits/sleep_01_portrait.png" alt="portrait">
+
+    </section>
 
     <script src="./assets/JS/script.js"></script>
-
 
 </body>
 
