@@ -172,7 +172,7 @@ img#portrait {
     width: 100%;
 }
 
-.animate {
+.slideInAnimation {
     animation-duration: 1s;
     animation-name: slidein;
     animation-fill-mode: forwards;
