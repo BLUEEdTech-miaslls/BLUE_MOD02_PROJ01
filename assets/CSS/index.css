@@ -1,7 +1,4 @@
 @media screen and (min-width: 800px) {
-    html {
-        font-size: 1em;
-    }
     body {
         flex-direction: row;
         background-image: url('../img/blank_BG.png');
@@ -53,6 +50,12 @@
     button.glassBtn:hover {
         background: rgba(117, 171, 74, 0.9);
         cursor: pointer;
+    }
+    div#changeBtnText {
+        font-size: 1.5rem;
+    }
+    img#changeBtnIcon {
+        width: 1.5rem;
     }
     /* 📌📌 ----- OUTFIT ----- */
     section#outfitContainer {
