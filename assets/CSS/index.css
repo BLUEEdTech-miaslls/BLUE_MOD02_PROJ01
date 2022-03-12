@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     body {
         flex-direction: row;
         background-image: url('../img/blank_BG.png');
@@ -23,7 +23,7 @@
         align-self: baseline;
     }
     h1#title {
-        font-size: 2rem;
+        font-size: 200%;
     }
     /* 📌 icon bar */
     section#iconBar {
