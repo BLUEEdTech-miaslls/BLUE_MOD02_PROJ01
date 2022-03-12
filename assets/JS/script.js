@@ -1,12 +1,12 @@
 const sleep01 = "Noooosa, que sono!";
 const sleep02 = "Ah, oi! Não tinha te visto aí!";
 const sleep03 = "Nossa, olha minha cara, meu cabelo, minha roupa...";
-const sleep04 = "Será que você pode me ajudar a escolher uma roupa?";
-const everyday = "Everyday text";
-const formal = "Formal text";
-const party = "Party text";
-const swim = "Swim text";
-const athletic = "Athletic text";
+const sleep04 = "Será que você pode me ajudar a escolher o que vestir?";
+const everyday = "Que tal esse look básico? Perfeito pro dia-a-dia!";
+const formal = "Ou esse mais formal, inspirado na Audrey Hepburn?";
+const party = "Esse aqui também é uma graça! Olha essas mangas!";
+const swim = "Posso também tentar moda praia...";
+const athletic = "... ou fitness fashion!";
 
 const assetList = [
     ["assets/img/outfits/sleep_outfit.png", "assets/img/portraits/sleep_01_portrait.png", sleep01],
