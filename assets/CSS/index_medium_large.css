@@ -45,9 +45,6 @@
         font-size: 1.2rem;
         line-height: 1.3rem;
     }
-    div#contentText {
-        min-height: 2.6rem;
-    }
     button.glassBtn {
         padding: 1rem 1.5rem;
     }

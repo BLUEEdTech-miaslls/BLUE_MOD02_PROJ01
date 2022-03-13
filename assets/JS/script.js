@@ -109,7 +109,6 @@ changeBtn.addEventListener('click', () => {
 
     if (changeBtnValue === 4) {
         CASsoundtrack.play();
-
     }
 
     changeBtnValue++;
