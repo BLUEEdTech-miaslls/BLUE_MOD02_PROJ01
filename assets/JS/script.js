@@ -102,6 +102,16 @@ changeBtn.addEventListener('click', () => {
         doAnimation();
     }
 
+    // 📌 play audio
+
+    let CASsoundtrack = document.getElementById('CASsoundtrack');
+    CASsoundtrack.volume = 0.05;
+
+    if (changeBtnValue === 4) {
+        CASsoundtrack.play();
+
+    }
+
     changeBtnValue++;
     changeBtn.value = `${changeBtnValue}`;
 });
