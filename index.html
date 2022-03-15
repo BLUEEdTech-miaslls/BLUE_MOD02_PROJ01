@@ -5,84 +5,197 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" as="image" href="./assets/img/blank_BG.png">
-    <link rel="preload" as="image" href="./assets/img/blank_BG_small.png">
-    <link rel="preload" as="image" href="./assets/img/outfits/athletic_outfit.png">
-    <link rel="preload" as="image" href="./assets/img/outfits/everyday_outfit.png">
-    <link rel="preload" as="image" href="./assets/img/outfits/formal_outfit.png">
-    <link rel="preload" as="image" href="./assets/img/outfits/party_outfit.png">
-    <link rel="preload" as="image" href="./assets/img/outfits/sleep_outfit.png">
-    <link rel="preload" as="image" href="./assets/img/outfits/swim_outfit.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/sleep_01_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/sleep_02_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/sleep_03_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/sleep_04_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/athletic_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/everyday_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/formal_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/party_portrait.png">
-    <link rel="preload" as="image" href="./assets/img/portraits/swim_portrait.png">
+
     <link rel="stylesheet" href="./assets/CSS/index_small.css">
-    <link rel="stylesheet" href="./assets/CSS/index_medium_large.css">
-    <link rel="stylesheet" href="./assets/CSS/index_medium.css">
-    <link rel="icon" href="./assets/img/favicon.ico">
-    <title>Jogo do Humor: DRESS ME UP!</title>
+    <link rel="stylesheet" href="./assets/CSS/index_large.css">
+    <link rel="icon" href="./assets/img/icons/favicon.ico">
+
+    <title>Jogo do Humor: BLUEsims</title>
 </head>
 
 <body>
 
-    <audio id="CASsoundtrack" preload="auto">
-        <source src="./assets/audio/CASsoundtrack.mp3" type="audio/mpeg">
-    </audio>
-
     <main id="mainContainer">
 
         <section id="titleContainer">
-            <div id="plumbobIconContainer"><img id="plumbobIcon" src="./assets/img/plumbob.png" alt="plumbob icon"></div>
-            <h1 id="title">DRESS ME UP!</h2>
-        </section>
 
-        <section id="iconBar">
-
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (10).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (16).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (154).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (162).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (28).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (217).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (3).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (439).png" alt="icon">
-            <img class="iconBar_icon" src="./assets/img/icons/sims-4-jeu-de-base-game-icones-icons (96).png" alt="icon">
+            <div id="titleBox">
+                <div id="plumbobIconContainer">
+                    <img src="./assets/img/icons/plumbob.png" alt="plumbob icon" id="plumbobIcon">
+                </div>
+                <h1 id="title">BLUEsims</h1>
+            </div>
 
         </section>
 
-        <section id="content">
-            <div id="contentText">
-                Noooosa, que sono!
+        <section id="iconBarContainer">
+
+            <img src="./assets/img/icons/iconBar_icons/straight-jacket.png" alt="icon" class="iconBar_icon">
+            <img src="./assets/img/icons/iconBar_icons/llama.png" alt="icon" class="iconBar_icon">
+            <img src="./assets/img/icons/iconBar_icons/martini-glass.png" alt="icon" class="iconBar_icon">
+            <img src="./assets/img/icons/iconBar_icons/smile.png" alt="icon" class="iconBar_icon">
+            <img src="./assets/img/icons/iconBar_icons/statue.png" alt="icon" class="iconBar_icon">
+            <img src="./assets/img/icons/iconBar_icons/shoes.png" alt="icon" class="iconBar_icon">
+            <img src="./assets/img/icons/iconBar_icons/lamp-head.png" alt="icon" class="iconBar_icon">
+            <img src="./assets/img/icons/iconBar_icons/pinata.png" alt="icon" class="iconBar_icon">
+
+
+
+        </section>
+
+        <section id="contentContainer">
+
+            <div class="contentBox" id="changeOutfitBox">
+
+                <div class="contentBoxText" id="changeOutfitBoxText">
+                    .contentBoxText #changeOutfitBoxText
+                </div>
+
+                <button class="glassBtn" id="changeOutfitBtn">
+
+                    <div class="btnContentContainer" id="changeOutfitBtnContentContainer">
+
+                        <div class="btnText" id="changeOutfitBtnText">
+                            button
+                        </div>
+                        
+                        <div class="btnIconContainer" id="changeOutfitBtnIconContainer">
+                            <img src="./assets/img/icons/btn_icons/heart_pink.png" alt="button icon" class="btnIcon" id="changeOutfitBtnIcon">
+                        </div>
+
+                    </div>
+
+                </button>
+
             </div>
 
-            <button class="glassBtn" id="changeBtn" value="1">
-            <div class="btnContent">
-                <div id="changeBtnText">"SulSul!"</div>
-                <img id="changeBtnIcon" src="./assets/img/btnIcons/talk.png" alt="button icon">
+            <div class="contentBox" id="chooseOutfitBox">
+
+                <div class="contentBoxText" id="chooseOutfitBoxText">
+                    #chooseOutfitBoxText
+                </div>
+
+                <div id="chooseOutfitCardContainer">
+
+                    <figure class="chooseOutfitCard" id="chooseOutfitCard_everyday">
+
+                        <button class="glassBtn chooseOutfitBtn" id="chooseOutfitBtn_everyday">
+                        <div class="btnIconContainer">
+                            <img src="./assets/img/icons/outfit_icons/everyday_icon.png" alt="everyday icon" class="btnIcon">
+                        </div>
+                        </button>
+
+                        <figcaption class="chooseOutfitCardCaption" id="chooseOutfitCard_everyday">
+                            básico
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="chooseOutfitCard" id="chooseOutfitCard_formal">
+
+                        <button class="glassBtn chooseOutfitBtn" id="chooseOutfitBtn_formal">
+                        <div class="btnIconContainer">
+                            <img src="./assets/img/icons/outfit_icons/formal_icon.png" alt="formal icon" class="btnIcon">
+                        </div>
+                        </button>
+
+                        <figcaption class="chooseOutfitCardCaption" id="chooseOutfitCard_formal">
+                            formal
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="chooseOutfitCard" id="chooseOutfitCard_party">
+
+                        <button class="glassBtn chooseOutfitBtn" id="chooseOutfitBtn_party">
+                        <div class="btnIconContainer">
+                            <img src="./assets/img/icons/outfit_icons/party_icon.png" alt="party icon" class="btnIcon">
+                        </div>
+                        </button>
+
+                        <figcaption class="chooseOutfitCardCaption" id="chooseOutfitCard_party">
+                            balada
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="chooseOutfitCard" id="chooseOutfitCard_swim">
+
+                        <button class="glassBtn chooseOutfitBtn" id="chooseOutfitBtn_swim">
+                        <div class="btnIconContainer">
+                            <img src="./assets/img/icons/outfit_icons/swim_icon.png" alt="swim icon" class="btnIcon">
+                        </div>
+                        </button>
+
+                        <figcaption class="chooseOutfitCardCaption" id="chooseOutfitCard_swim">
+                            piscina
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="chooseOutfitCard" id="chooseOutfitCard_athletic">
+
+                        <button class="glassBtn chooseOutfitBtn" id="chooseOutfitBtn_athletic">
+                        <div class="btnIconContainer">
+                            <img src="./assets/img/icons/outfit_icons/athletic_icon.png" alt="athletic icon" class="btnIcon">
+                        </div>
+                        </button>
+
+                        <figcaption class="chooseOutfitCardCaption" id="chooseOutfitCard_athletic">
+                            esportivo
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="chooseOutfitCard" id="chooseOutfitCard_sleep">
+
+                        <button class="glassBtn chooseOutfitBtn" id="chooseOutfitBtn_sleep">
+                        <div class="btnIconContainer">
+                            <img src="./assets/img/icons/outfit_icons/sleep_icon.png" alt="sleep icon" class="btnIcon">
+                        </div>
+                        </button>
+
+                        <figcaption class="chooseOutfitCardCaption" id="chooseOutfitCard_sleep">
+                            pijama
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+                <button class="glassBtn" id="confirmOutfitSelectionBtn">
+
+                    <div class="btnContentContainer" id="confirmOutfitSelectionBtnContentContainer">
+
+                        <div class="btnText" id="confirmOutfitSelectionBtnText">
+                            button
+                        </div>
+                        
+                        <div id="confirmOutfitSelectionBtnIconContainer">
+                            <img src="./assets/img/icons/btn_icons/heart_red.png" alt="button icon" class="btnIcon" id="confirmOutfitSelectionBtnIcon">
+                        </div>
+
+                    </div>
+
+                </button>
+
             </div>
-            </button>
 
         </section>
 
     </main>
 
-    <section id="outfitContainer">
-        <img id="outfit" src="./assets/img/outfits/sleep_outfit.png" alt="outfit">
-    </section>
+    <aside id="sideImgContainer">
 
-    <section id="portraitContainer">
+        <section id="outfitContainer">
+            <img src="./assets/img/outfits/sleep_outfit.png" alt="outfit" id="outfit">
+        </section>
 
-        <img id="portrait" src="./assets/img/portraits/sleep_01_portrait.png" alt="portrait">
+        <section id="portraitContainer">
+            <img src="./assets/img/portraits/sleep_01_portrait.png" alt="portrait" id="portrait">
+        </section>
 
-    </section>
-
-    <script src="./assets/JS/script.js"></script>
+    </aside>
 
 </body>
 

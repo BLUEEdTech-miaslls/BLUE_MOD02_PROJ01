@@ -1,0 +1,70 @@
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 2em;
+    }
+    body {
+        display: flex;
+        flex-direction: row;
+        background: url('../img/bg_imgs/blank_BG.png') no-repeat center;
+        background-size: cover;
+    }
+    /* 📌📌📌🚨 ----- MAIN ----- */
+    main#mainContainer {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    /* 📌📌 title */
+    section#titleContainer {
+        height: 20%;
+    }
+    div#plumbobIconContainer {
+        width: 5rem;
+        margin: 1rem 0 0 5%;
+    }
+    h1#title {
+        font-size: 1.5rem;
+    }
+    /* 📌📌 icon bar */
+    section#iconBarContainer {
+        width: 90%;
+        height: 4.3%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 20%;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    img.iconBar_icon {
+        height: 100%;
+        aspect-ratio: 1;
+    }
+    /* 📌📌 content */
+    section#contentContainer {
+        width: 100%;
+    }
+    div.contentBox {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0.125rem 0.125rem 1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+    }
+    /* 📌📌📌🚨 ----- SIDE IMAGES -----  */
+    aside#sideImgContainer {
+        width: 65%;
+        height: 100%;
+        display: flex;
+    }
+    /* 📌📌 outfit */
+    section#outfitContainer {
+        width: 45%;
+    }
+    /* 📌📌 portrait */
+    section#portraitContainer {
+        width: 55%;
+    }
+}

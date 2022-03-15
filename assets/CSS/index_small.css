@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'theSimsSans';
-    src: url('../fonts/thesimssansbold.woff') format('woff');
+    src: url('../font/thesimssansbold.woff') format('woff');
 }
 
 * {
@@ -11,53 +11,58 @@
 
 html {
     font-size: 1em;
+    font-family: 'theSimsSans', Fallback, sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    background-image: url('../img/blank_BG_small.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'theSimsSans', Fallback, sans-serif;
+    flex-direction: column;
     overflow: hidden;
+    background: url('../img/bg_imgs/blank_BG_small.png') no-repeat center;
+    background-size: cover;
+    color: rgba(25, 25, 25, 0.8)
 }
 
 
-/* 📌📌 ----- MAIN CONTENT ----- */
+/* 📌📌📌🚨 ----- MAIN ----- */
 
 main#mainContainer {
     width: 100%;
-    height: 40%;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    row-gap: 10%;
+    gap: 10%;
 }
 
 
-/* 📌 title */
+/* 📌📌 title */
 
 section#titleContainer {
-    width: 85%;
-    height: 4rem;
-    padding-left: 5%;
+    width: 100%;
+    height: 25%;
     display: flex;
-    align-items: center;
-    align-self: flex-start;
-    column-gap: 1rem;
-    background-color: rgba(196, 196, 196, 0.3);
-    box-shadow: 0.25rem 0.25rem 2rem 2rem rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 12.5rem 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+div#titleBox {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 7.5%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0.125rem 0.125rem 1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10rem 0;
 }
 
 div#plumbobIconContainer {
-    width: 15%;
-    align-self: center;
+    width: 4rem;
+    margin: 3% 0 0 5%;
+    align-self: baseline;
 }
 
 img#plumbobIcon {
@@ -65,55 +70,79 @@ img#plumbobIcon {
 }
 
 h1#title {
-    color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    align-self: center;
 }
 
 
-/* 📌 icon bar */
+/* 📌📌 icon bar */
 
-section#iconBar {
+section#iconBarContainer {
     display: none;
 }
 
 
-/* 📌 content */
+/* 📌📌 content */
 
-section#content {
-    width: 80%;
-    max-height: 40%;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.1rem;
-}
-
-div#contentText {
+section#contentContainer {
+    width: 100%;
+    height: 65%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
+
+
+/* 📌 content box */
+
+div.contentBox {
+    width: 80%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+div.contentBoxText {
+    width: 100%;
+}
+
+div#changeOutfitBox {
+    display: none;
+}
+
+div#chooseOutfitBox {
+    display: flex;
+}
+
+
+/* 📌 button */
 
 button.glassBtn {
     position: relative;
     display: inline-block;
-    margin-top: 7.5%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
     background-color: rgba(117, 171, 74, 0.9);
     background-image: linear-gradient(rgba(117, 171, 74, 0.9), rgba(117, 171, 74, 0.5));
     border-radius: 2rem;
+    outline: 0;
     box-shadow: 0 1px 4px -2px #333;
     text-shadow: 0 -1px #333;
     color: #fff;
     font-family: 'theSimsSans', Fallback, sans-serif;
+    font-size: 1rem;
 }
 
-button.glassBtn:after {
+button.glassBtn::after {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 10px;
-    width: calc(100% - 20px);
+    top: 0.25rem;
+    left: 0.65rem;
+    width: calc(100% - 1.3rem);
     height: 50%;
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
     border-radius: 6rem;
@@ -124,27 +153,88 @@ button.glassBtn:hover {
     cursor: pointer;
 }
 
-div.btnContent {
+div.btnContentContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     gap: 0.5rem;
 }
 
-div#changeBtnText {
-    font-size: 1rem;
+div.btnIconContainer {
+    width: 1.25rem;
 }
 
-img#changeBtnIcon {
+img.btnIcon {
+    width: 100%;
+}
+
+button.chooseOutfitBtn {
+    padding: 0.3rem 0.5rem;
+    border-radius: 1.5rem;
+    background-color: rgba(200, 200, 200, 0.315);
+    background-image: none;
+}
+
+button.chooseOutfitBtn::after {
+    left: 0.3rem;
+    width: calc(100% - 0.6rem);
+    height: 60%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.0));
+    border-radius: 6rem;
+}
+
+button.chooseOutfitBtn:hover {
+    background-color: rgba(117, 171, 74, 0.9);
+}
+
+button.chooseOutfitBtn:focus {
+    background-color: rgba(117, 171, 74, 0.9);
+}
+
+div#chooseOutfitCardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    justify-content: space-evenly;
+}
+
+figure.chooseOutfitCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    aspect-ratio: 1;
+}
+
+figcaption.chooseOutfitCardCaption {
+    font-size: 0.6rem;
+}
+
+button#confirmOutfitSelectionBtn {
+    font-size: 0.75rem;
+}
+
+div#confirmOutfitSelectionBtnIconContainer {
     width: 1rem;
 }
 
 
-/* 📌📌 ----- OUTFIT ----- */
+/* 📌📌📌🚨 ----- SIDE IMAGES -----  */
+
+aside#sideImgContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* 📌📌 outfit */
 
 section#outfitContainer {
     width: 40%;
-    height: 60%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,14 +247,14 @@ img#outfit {
 }
 
 
-/* 📌📌 PORTRAIT */
+/* 📌📌 portrait */
 
 section#portraitContainer {
     width: 60%;
-    height: 60%;
+    height: 100%;
     display: flex;
     align-items: flex-end;
-    justify-self: flex-end;
+    justify-content: flex-end;
 }
 
 img#portrait {

@@ -23,7 +23,7 @@
         align-self: baseline;
     }
     h1#title {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     /* 📌 icon bar */
     section#iconBar {
@@ -37,7 +37,7 @@
         height: 100%;
     }
     /* 📌 content */
-    section#content {
+    section.content {
         padding: 5%;
         background-color: rgba(196, 196, 196, 0.3);
         box-shadow: 0.25rem 0.25rem 2rem 2rem rgba(0, 0, 0, 0.1);
@@ -53,6 +53,32 @@
     }
     img#changeBtnIcon {
         display: none;
+    }
+    /* 📌 choose fave outfit */
+    section#chooseFaveOutfit {
+        padding: 5%;
+        gap: 4rem;
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    button.outfitChoiceBtn {
+        width: 5rem;
+        padding: 0.7rem 0.7rem;
+    }
+    button.outfitChoiceBtn::after {
+        left: 15px;
+        width: calc(100% - 30px);
+        border-radius: 3.5rem;
+    }
+    div.outfitBtnText {
+        font-size: 1.5rem;
+    }
+    section#confirmOutfitSelection {
+        margin-right: 10%;
+        align-self: flex-end;
+    }
+    button#confirmOutfitSelectionBtn {
+        font-size: 2rem;
     }
     /* 📌📌 ----- OUTFIT ----- */
     section#outfitContainer {
