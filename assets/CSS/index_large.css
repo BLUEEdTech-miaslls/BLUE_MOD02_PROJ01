@@ -21,7 +21,7 @@
         height: 20%;
     }
     div#plumbobIconContainer {
-        width: 4.5rem;
+        width: 5rem;
         margin: 1rem 0 0 5%;
     }
     h1#title {
@@ -66,5 +66,9 @@
     /* 📌📌 portrait */
     section#portraitContainer {
         width: 55%;
+    }
+    /* 📌📌 */
+    #chosenOutfitBox {
+        width: 20%;
     }
 }

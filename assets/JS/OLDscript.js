@@ -104,23 +104,15 @@ changeBtn.addEventListener('click', () => {
     //     doAnimation();
     // }
 
-    // 📌 play audio FIXME: unpause
+    // // 📌 play audio FIXME: unpause
 
-    let CASsoundtrack = document.getElementById('CASsoundtrack');
-    CASsoundtrack.volume = 0.05;
+    // let CASsoundtrack = document.getElementById('CASsoundtrack');
+    // CASsoundtrack.volume = 0.05;
 
-    if (changeBtnValue === 4) {
-        CASsoundtrack.play();
-    }
+    // if (changeBtnValue === 4) {
+    //     CASsoundtrack.play();
+    // }
 
     // changeBtnValue++;
     // changeBtn.value = `${changeBtnValue}`;
 });
-
-const outfitChoiceBtnAll = document.querySelectorAll('.outfitChoiceBtn');
-
-console.log(outfitChoiceBtnAll);
-
-for (let i = 0; i < outfitChoiceBtnAll.length; i++) {
-    outfitChoiceBtnAll[i].addEventListener('click', () => {})
-}
