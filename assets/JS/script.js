@@ -246,15 +246,15 @@ confirmOutfitSelectionBtn.addEventListener('click', () => {
         switch (chosenOutfit) {
             case 'everyday':
                 chosenOutfitBoxText.innerText = 'everyday text';
-                bg = `url('assets/img/bg_imgs/outfits_bg/swim_bg.png')`; // 👁‍🗨 update with != backgrounds
+                bg = `url('assets/img/bg_imgs/outfits_bg/everyday_bg.png')`; // 👁‍🗨 update with != backgrounds
                 break;
             case 'formal':
                 chosenOutfitBoxText.innerText = 'formal text';
-                bg = `url('assets/img/bg_imgs/outfits_bg/swim_bg.png')`;
+                bg = `url('assets/img/bg_imgs/outfits_bg/formal_bg.png')`;
                 break;
             case 'party':
                 chosenOutfitBoxText.innerText = 'party text';
-                bg = `url('assets/img/bg_imgs/outfits_bg/swim_bg.png')`;
+                bg = `url('assets/img/bg_imgs/outfits_bg/party_bg.png')`;
                 break;
             case 'swim':
                 chosenOutfitBoxText.innerText = 'swim text';
@@ -262,11 +262,11 @@ confirmOutfitSelectionBtn.addEventListener('click', () => {
                 break;
             case 'athletic':
                 chosenOutfitBoxText.innerText = 'athletic text';
-                bg = `url('assets/img/bg_imgs/outfits_bg/swim_bg.png')`;
+                bg = `url('assets/img/bg_imgs/outfits_bg/athletic_bg.png')`;
                 break;
             case 'sleep':
                 chosenOutfitBoxText.innerText = 'sleep text';
-                bg = `url('assets/img/bg_imgs/outfits_bg/swim_bg.png')`;
+                bg = `url('assets/img/bg_imgs/outfits_bg/sleep_bg.png')`;
                 break;
         }
 
