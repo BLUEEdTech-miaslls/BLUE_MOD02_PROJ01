@@ -15,6 +15,10 @@
 
 <body>
 
+    <audio id="CASsoundtrack" preload="auto">
+        <source src="./assets/audio/CASsoundtrack.mp3" type="audio/mpeg">
+    </audio>
+
     <main id="mainContainer">
 
         <section id="titleContainer">
@@ -51,7 +55,7 @@
                     .contentBoxText #changeOutfitBoxText
                 </div>
 
-                <button class="glassBtn" id="changeOutfitBtn">
+                <button class="glassBtn" id="changeOutfitBtn" value="1">
 
                     <div class="btnContentContainer" id="changeOutfitBtnContentContainer">
 
@@ -69,7 +73,7 @@
 
             </div>
 
-            <div class="contentBox" id="chooseOutfitBox">
+            <div class="contentBox hidden" id="chooseOutfitBox">
 
                 <div class="contentBoxText" id="chooseOutfitBoxText">
                     #chooseOutfitBoxText
@@ -192,10 +196,15 @@
         </section>
 
         <section id="portraitContainer">
-            <img src="./assets/img/portraits/sleep_01_portrait.png" alt="portrait" id="portrait">
+            <div id="animationContainer">
+                <img src="./assets/img/portraits/sleep_01_portrait.png" alt="portrait" id="portrait">
+            </div>
+
         </section>
 
     </aside>
+
+    <script src="./assets/JS/script.js "></script>
 
 </body>
 

@@ -1,6 +1,6 @@
 @media screen and (min-width: 600px) {
     html {
-        font-size: 32px;
+        font-size: 1.4em;
     }
     body {
         display: flex;
@@ -21,7 +21,7 @@
         height: 20%;
     }
     div#plumbobIconContainer {
-        width: 5rem;
+        width: 4.5rem;
         margin: 1rem 0 0 5%;
     }
     h1#title {

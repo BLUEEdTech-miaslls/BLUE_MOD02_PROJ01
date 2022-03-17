@@ -92,6 +92,10 @@ section#contentContainer {
     justify-content: center;
 }
 
+.hidden {
+    display: none !important;
+}
+
 
 /* 📌 content box */
 
@@ -112,7 +116,7 @@ div.contentBoxText {
 }
 
 div#changeOutfitBox {
-    display: none;
+    display: flex;
 }
 
 div#chooseOutfitBox {
@@ -168,6 +172,25 @@ img.btnIcon {
     width: 100%;
 }
 
+
+/* 📌 */
+
+div#chooseOutfitCardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    justify-content: space-evenly;
+}
+
+figure.chooseOutfitCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    aspect-ratio: 1;
+}
+
 button.chooseOutfitBtn {
     padding: 0.3rem 0.5rem;
     border-radius: 1.5rem;
@@ -189,22 +212,6 @@ button.chooseOutfitBtn:hover {
 
 button.chooseOutfitBtn:focus {
     background-color: rgba(117, 171, 74, 0.9);
-}
-
-div#chooseOutfitCardContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    row-gap: 1rem;
-    justify-content: space-evenly;
-}
-
-figure.chooseOutfitCard {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    align-items: center;
-    aspect-ratio: 1;
 }
 
 figcaption.chooseOutfitCardCaption {
@@ -252,13 +259,21 @@ img#outfit {
 section#portraitContainer {
     width: 60%;
     height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
 }
 
 img#portrait {
     width: 100%;
+}
+
+
+/* 📌📌🚨 ----- ANIMATION ----- */
+
+div#animationContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .slideInAnimation {
