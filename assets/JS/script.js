@@ -112,14 +112,12 @@ changeOutfitBtn.addEventListener('click', () => {
 
     // 📌 play audio 
 
-    // FIXME: unpause
+    let CASsoundtrack = document.getElementById('CASsoundtrack');
+    CASsoundtrack.volume = 0.05;
 
-    // let CASsoundtrack = document.getElementById('CASsoundtrack');
-    // CASsoundtrack.volume = 0.05;
-
-    // if (changeOutfitBtnValue === 4) {
-    //     CASsoundtrack.play();
-    // }
+    if (changeOutfitBtnValue === 4) {
+        CASsoundtrack.play();
+    }
 
     // 📌 update outfit/portrait IMG + changeOutfitBox TEXT
 
