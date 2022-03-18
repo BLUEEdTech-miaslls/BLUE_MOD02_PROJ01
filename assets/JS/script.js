@@ -1,7 +1,5 @@
 // 📌📌 UNIVERSAL ASSETS
 
-// 👁‍🗨 organize and review scope
-
 let outfit = document.getElementById('outfit')
 let portrait = document.getElementById('portrait');
 
@@ -213,9 +211,6 @@ for (let outfitBtn of chooseOutfitBtnList) {
                 doAnimation();
                 break;
         }
-
-        console.log(chosenOutfit); // FIXME:
-
     });
 }
 
@@ -236,6 +231,7 @@ confirmOutfitSelectionBtn.addEventListener('click', () => {
         let chosenOutfitBoxText = document.getElementById('chosenOutfitBoxText');
 
         let bg;
+        let text;
 
         mainContainer.setAttribute('class', 'hidden');
         sideImgContainer.setAttribute('class', 'hidden');
@@ -243,31 +239,32 @@ confirmOutfitSelectionBtn.addEventListener('click', () => {
 
         switch (chosenOutfit) {
             case 'everyday':
-                chosenOutfitBoxText.innerText = 'everyday text';
+                text = 'everyday text';
                 bg = `url('assets/img/bg_imgs/outfits_bg/everyday_bg.png')`; // 👁‍🗨 update with != backgrounds
                 break;
             case 'formal':
-                chosenOutfitBoxText.innerText = 'formal text';
+                text = 'formal text';
                 bg = `url('assets/img/bg_imgs/outfits_bg/formal_bg.png')`;
                 break;
             case 'party':
-                chosenOutfitBoxText.innerText = 'party text';
+                text = 'party text';
                 bg = `url('assets/img/bg_imgs/outfits_bg/party_bg.png')`;
                 break;
             case 'swim':
-                chosenOutfitBoxText.innerText = 'swim text';
+                text = 'swim text';
                 bg = `url('assets/img/bg_imgs/outfits_bg/swim_bg.png')`;
                 break;
             case 'athletic':
-                chosenOutfitBoxText.innerText = 'athletic text';
+                text = 'athletic text';
                 bg = `url('assets/img/bg_imgs/outfits_bg/athletic_bg.png')`;
                 break;
             case 'sleep':
-                chosenOutfitBoxText.innerText = 'sleep text';
+                text = 'sleep text';
                 bg = `url('assets/img/bg_imgs/outfits_bg/sleep_bg.png')`;
                 break;
         }
 
+        chosenOutfitBoxText.innerText = text;
         document.body.style.backgroundImage = bg;
     }
 });
