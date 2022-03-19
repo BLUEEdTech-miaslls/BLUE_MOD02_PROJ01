@@ -19,7 +19,7 @@ const doAnimation = () => {
 
 }
 
-document.addEventListener('DOMContentLoaded', () => { // animate on screen load
+document.addEventListener('DOMContentLoaded', () => {
     doAnimation();
 });
 
@@ -37,42 +37,42 @@ changeOutfitBtn.addEventListener('click', () => {
             id: 'sleep 01',
             outfit_url: 'assets/img/outfits/sleep_outfit.png',
             portrait_url: 'assets/img/portraits/sleep_01_portrait.png',
-            text: 'sleep 01 text',
-            button: 'sleep 01 btn'
+            text: 'Aaaaah, que sono!',
+            button: '"Sul Sul!"'
         },
         {
             id: 'sleep 02',
             outfit_url: 'assets/img/outfits/sleep_outfit.png',
             portrait_url: 'assets/img/portraits/sleep_02_portrait.png',
-            text: 'sleep 02 text',
+            text: 'Ah, oi! Não tinha te visto aí!',
             button: 'próximo'
         },
         {
             id: 'sleep 03',
             outfit_url: 'assets/img/outfits/sleep_outfit.png',
             portrait_url: 'assets/img/portraits/sleep_03_portrait.png',
-            text: 'sleep 03 text',
+            text: 'Nossa, olha minha cara, meu cabelo, minha roupa...',
             button: 'próximo'
         },
         {
             id: 'sleep 04',
             outfit_url: 'assets/img/outfits/sleep_outfit.png',
             portrait_url: 'assets/img/portraits/sleep_04_portrait.png',
-            text: 'sleep 04 text',
-            button: 'sleep 04 btn'
+            text: 'Você me ajuda a escolher o que vestir?',
+            button: '"Bora!"'
         },
         {
             id: 'everyday',
             outfit_url: 'assets/img/outfits/everyday_outfit.png',
             portrait_url: 'assets/img/portraits/everyday_portrait.png',
-            text: 'everyday text',
+            text: 'Que tal esse look básico? Perfeito pro dia-a-dia!',
             button: 'próximo'
         },
         {
             id: 'formal',
             outfit_url: 'assets/img/outfits/formal_outfit.png',
             portrait_url: 'assets/img/portraits/formal_portrait.png',
-            text: 'formal text',
+            text: 'Ou esse mais formal, inspirado na Audrey Hepburn?',
             button: 'próximo'
 
         },
@@ -80,7 +80,7 @@ changeOutfitBtn.addEventListener('click', () => {
             id: 'party',
             outfit_url: 'assets/img/outfits/party_outfit.png',
             portrait_url: 'assets/img/portraits/party_portrait.png',
-            text: 'party text',
+            text: 'Esse aqui também é uma graça! Olha essas mangas!',
             button: 'próximo'
 
         },
@@ -88,7 +88,7 @@ changeOutfitBtn.addEventListener('click', () => {
             id: 'swim',
             outfit_url: 'assets/img/outfits/swim_outfit.png',
             portrait_url: 'assets/img/portraits/swim_portrait.png',
-            text: 'swim text',
+            text: 'Posso também tentar moda praia...',
             button: 'próximo'
 
         },
@@ -96,7 +96,7 @@ changeOutfitBtn.addEventListener('click', () => {
             id: 'athletic',
             outfit_url: 'assets/img/outfits/athletic_outfit.png',
             portrait_url: 'assets/img/portraits/athletic_portrait.png',
-            text: 'athletic text',
+            text: '... ou fitness fashion!',
             button: 'próximo'
 
         }
@@ -239,27 +239,29 @@ confirmOutfitSelectionBtn.addEventListener('click', () => {
 
         switch (chosenOutfit) {
             case 'everyday':
-                text = 'everyday text';
-                bg = `url('assets/img/bg_imgs/outfits_bg/everyday_bg.png')`; // 👁‍🗨 update with != backgrounds
+                text = 'Partiu sinuca e Happy Hour!';
+                bg = `url('assets/img/bg_imgs/outfits_bg/everyday_bg.png')`;
                 break;
             case 'formal':
-                text = 'formal text';
+                text = 'Já posso aproveitar um jantar romântico...';
                 bg = `url('assets/img/bg_imgs/outfits_bg/formal_bg.png')`;
+
                 break;
             case 'party':
-                text = 'party text';
+                text = 'Aí sim, vou beber todas!';
                 bg = `url('assets/img/bg_imgs/outfits_bg/party_bg.png')`;
                 break;
             case 'swim':
-                text = 'swim text';
+                text = 'Isso é que é vida!';
                 bg = `url('assets/img/bg_imgs/outfits_bg/swim_bg.png')`;
                 break;
             case 'athletic':
-                text = 'athletic text';
+                text = 'Pensando no ex...';
                 bg = `url('assets/img/bg_imgs/outfits_bg/athletic_bg.png')`;
+                chosenOutfitBoxContainer.style.justifyContent = 'flex-start';
                 break;
             case 'sleep':
-                text = 'sleep text';
+                text = 'Tá certo, melhor voltar pra cama e fazer nada o dia inteiro...';
                 bg = `url('assets/img/bg_imgs/outfits_bg/sleep_bg.png')`;
                 break;
         }
