@@ -12,7 +12,12 @@
 <img src="./assets/img/icons/iconBar_icons/statue.png" alt="icon" width="30px"/>
 <img src="./assets/img/icons/iconBar_icons/straight-jacket.png" alt="icon" width="30px"/>
 
-🏠 \[home\] [https://miaslls.github.io/BLUE_MOD02_PROJ01/](https://miaslls.github.io/BLUE_MOD02_PROJ01/)
+---
+
+
+## 🏠 \[home\] [miaslls.github.io/BLUE_MOD02_PROJ01](https://miaslls.github.io/BLUE_MOD02_PROJ01/)
+
+---
 
 - JavaScript
 - Express
