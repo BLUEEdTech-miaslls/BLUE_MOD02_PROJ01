@@ -7,8 +7,6 @@
 
 ## 🏠 \[home\] [miaslls.github.io/BLUE_MOD02_PROJ01](https://miaslls.github.io/BLUE_MOD02_PROJ01/)
 
----
-
 - JavaScript
 - Express
 - HTML
