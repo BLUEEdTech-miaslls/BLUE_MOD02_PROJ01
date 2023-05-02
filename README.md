@@ -4,10 +4,8 @@
 
 ---
 
-
-## 🏠 \[home\] [blueedtech-miaslls.github.io/BLUE_MOD02_PROJ01/](https://blueedtech-miaslls.github.io/BLUE_MOD02_PROJ01/)
+## 🏠 \[home\] [miaslls.github.io/BLUE_jogo-do-humor_HTML-CSS-JS](https://miaslls.github.io/BLUE_jogo-do-humor_HTML-CSS-JS/)
 
 - JavaScript
-- Express
 - HTML
 - CSS
