@@ -1,3 +1,8 @@
+This page is in <img src="assets/img/flag-en.png" width="14" alt="English"> English.
+Para visualisar essa página em <img src="assets/img/flag-pt-br.png" width="14" alt="Português"> Português, [clique aqui](./README-ptbr.md).
+
+---
+
 # 🪅 BLUEsims
 
 ![Static Badge: Study](https://img.shields.io/badge/study-blue)
@@ -6,11 +11,7 @@
 ![Static Badge: CSS](https://img.shields.io/badge/CSS-5a5a5a?logo=css3)
 ![Static Badge: JavaScript](https://img.shields.io/badge/JavaScript-5a5a5a?logo=javascript)
 
-<img src="assets/img/flag-en.png" width="16" alt="English"> &nbsp; A simple application that uses JavaScript to change DOM elements when clicking a button.
-
----
-
-<img src="assets/img/flag-pt-br.png" width="16" alt="Português"> &nbsp; Aplicação simples que utiliza JavaScript para alterar elementos do DOM ao clicar em um botão.
+A DOM manipulation exercise inspired by the Sims, where you'll assist the stylish Sim Henrietta choose her outfit and influence her day.
 
 ## 🔗 Demo
 
@@ -33,15 +34,9 @@
 
 ## ℹ️ General Info
 
-<img src="assets/img/flag-en.png" width="16" alt="English"> &nbsp; Proposed exercise:
+Proposed exercise:
 
 > _In this exercise, you should create a simple web page using HTML and use JavaScript to practice DOM manipulation. Start by creating an HTML page with an image, text, and a button. Next, add an event listener to the button to detect clicks. When the button is clicked, you should change the image, the paragraph text, and the background color/image. For an extra challenge, make the elements return to their original state when the button is clicked again. Use [this page](https://blue-edtech.github.io/Codelab/jogo-do-humor/index.html) as an example._
-
----
-
-<img src="assets/img/flag-pt-br.png" width="16" alt="Português"> &nbsp; Exercício proposto:
-
-> _Neste exercício, você deve criar uma página web simples com HTML e usar JavaScript para praticar a manipulação do DOM. Comece criando uma página HTML com uma imagem, um texto e um botão. Depois, adicione um event listener ao botão para detectar cliques. Quando o botão for clicado, você deve alterar a imagem, o texto do parágrafo e a cor de fundo/imagem. Para um desafio extra, faça com que os elementos voltem ao estado original quando o botão for clicado novamente. Utilize [esta página](https://blue-edtech.github.io/Codelab/jogo-do-humor/index.html) como exemplo._
 
 ## 🧮 Technologies
 
@@ -51,21 +46,10 @@
 
 ## 💎 Features
 
-<img src="assets/img/flag-en.png" width="16" alt="English">
-
 - CSS animations
 - Responsive layout
 - Custom typography
 - Custom images
-
----
-
-<img src="assets/img/flag-pt-br.png" width="16" alt="Português">
-
-- Animações em CSS
-- Layout responsivo
-- Tipografia customizada
-- Imagens customizadas
 
 ## 🖼️ Screenshots
 
