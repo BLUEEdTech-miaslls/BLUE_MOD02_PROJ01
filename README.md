@@ -11,11 +11,11 @@ Para visualizar essa página em <img src="assets/img/flag-pt-br.png" width="14" 
 ![Static Badge: CSS](https://img.shields.io/badge/CSS-5a5a5a?logo=css3)
 ![Static Badge: JavaScript](https://img.shields.io/badge/JavaScript-5a5a5a?logo=javascript)
 
-A DOM manipulation exercise inspired by the Sims, where you'll assist the stylish Sim Henrietta choose her outfit and influence her day.
+Inspired by The Sims, you'll assist the stylish Henrietta choose her outfit and influence her day.
 
 ## 🔗 Demo
 
-- [GitHub Pages](https://miaslls.github.io/BLUEsims_HTML-CSS-JS/)
+- [GitHub Pages](https://miaslls.github.io/BLUEsims/)
 
 ## 🟰 Table of Contents
 

@@ -11,11 +11,11 @@ To view this page in <img src="assets/img/flag-en.png" width="14" alt="English">
 ![Static Badge: CSS](https://img.shields.io/badge/CSS-5a5a5a?logo=css3)
 ![Static Badge: JavaScript](https://img.shields.io/badge/JavaScript-5a5a5a?logo=javascript)
 
-Um exercício de manipulação do DOM inspirado no jogo The Sims, onde você ajudará a belíssima Sim Henrietta a escolher seu visual e, assim, decidir o que ela fará hoje.
+Inspirado no jogo The Sims, você ajudará a belíssima Henrietta a escolher seu visual e, assim, decidir o que ela fará hoje.
 
 ## 🔗 Demo
 
-- [GitHub Pages](https://miaslls.github.io/BLUEsims_HTML-CSS-JS/)
+- [GitHub Pages](https://miaslls.github.io/BLUEsims/)
 
 ## 🟰 Tabela de Conteúdos
 
