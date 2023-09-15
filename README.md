@@ -17,21 +17,6 @@ Inspired by The Sims, you'll assist the stylish Henrietta choose her outfit and 
 
 - [GitHub Pages](https://miaslls.github.io/BLUEsims/)
 
-## 🟰 Table of Contents
-
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
-- [General Info](#ℹ️-general-info)
-- [Technologies](#-technologies)
-- [Features](#-features)
-- [Screenshots](#%EF%B8%8F-screenshots)
-- [Authors](#-authors)
-- [Acknowledgements](#-acknowledgements)
-
-</details>
-
 ## ℹ️ General Info
 
 Proposed exercise:
@@ -53,17 +38,11 @@ Proposed exercise:
 
 ## 🖼️ Screenshots
 
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
 ![BLUEsims App Screenshot](assets/img/screenshots/01.jpg)
 
 ![BLUEsims App Screenshot](assets/img/screenshots/02.jpg)
 
 ![BLUEsims App Screenshot](assets/img/screenshots/03.jpg)
-
-</details>
 
 ## 👩‍💻 Authors
 

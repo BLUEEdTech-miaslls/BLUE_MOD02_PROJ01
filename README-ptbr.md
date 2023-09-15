@@ -17,21 +17,6 @@ Inspirado no jogo The Sims, você ajudará a belíssima Henrietta a escolher seu
 
 - [GitHub Pages](https://miaslls.github.io/BLUEsims/)
 
-## 🟰 Tabela de Conteúdos
-
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
-- [General Info](#ℹ️-general-info)
-- [Tecnologias](#-tecnologias)
-- [Features](#-features)
-- [Screenshots](#%EF%B8%8F-screenshots)
-- [Autoria](#-autoria)
-- [Aquele Abraço](#-aquele-abraço)
-
-</details>
-
 ## ℹ️ Informações Gerais
 
 Exercício proposto:
@@ -53,23 +38,17 @@ Exercício proposto:
 
 ## 🖼️ Screenshots
 
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
 ![BLUEsims App Screenshot](assets/img/screenshots/01.jpg)
 
 ![BLUEsims App Screenshot](assets/img/screenshots/02.jpg)
 
 ![BLUEsims App Screenshot](assets/img/screenshots/03.jpg)
 
-</details>
-
 ## 👩‍💻 Autoria
 
 - [@miaslls](https://www.github.com/miaslls)
 
-## 🫶 Aquele Abraço
+## 🫶 Recursos / Agradecimentos
 
 - [The Sims 4](https://www.ea.com/games/the-sims/the-sims-4)
 - [The Sims 4 Ultimate Game Icon Pack](https://modthesims.info/d/549037/the-sims-4-ultimate-game-icon-pack.html)
