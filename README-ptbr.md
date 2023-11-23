@@ -6,7 +6,6 @@ To view this page in <img src="assets/img/flag-en.png" width="14" alt="English">
 # 🪅 BLUEsims
 
 ![Static Badge: Study](https://img.shields.io/badge/study-blue)
-![Static Badge: Version - 1.0.0](https://img.shields.io/badge/version-1.0.0-green)
 ![Static Badge: HTML](https://img.shields.io/badge/HTML-5a5a5a?logo=html5)
 ![Static Badge: CSS](https://img.shields.io/badge/CSS-5a5a5a?logo=css3)
 ![Static Badge: JavaScript](https://img.shields.io/badge/JavaScript-5a5a5a?logo=javascript)
