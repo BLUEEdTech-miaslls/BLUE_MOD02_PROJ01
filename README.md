@@ -14,7 +14,7 @@ Inspired by The Sims, you'll assist the stylish Henrietta choose her outfit and 
 
 ## 🔗 Demo
 
-- [GitHub Pages](https://miaslls.github.io/BLUEsims/)
+- [bluesims.camilasalles.dev](https://bluesims.camilasalles.dev/)
 
 ## ℹ️ General Info
 

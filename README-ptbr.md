@@ -14,7 +14,7 @@ Inspirado no jogo The Sims, você ajudará a belíssima Henrietta a escolher seu
 
 ## 🔗 Demo
 
-- [GitHub Pages](https://miaslls.github.io/BLUEsims/)
+- [bluesims.camilasalles.dev](https://bluesims.camilasalles.dev/)
 
 ## ℹ️ Informações Gerais
 
